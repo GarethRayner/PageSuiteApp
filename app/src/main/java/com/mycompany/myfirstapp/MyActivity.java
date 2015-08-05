@@ -4,10 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MyActivity extends Activity {
 
@@ -17,6 +19,14 @@ public class MyActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+
+        if(savedInstanceState != null) {
+            EditText messageBox = (EditText) findViewById(R.id.edit_message);
+            String message = savedInstanceState.getString("message");
+            Log.i("Gareth", message);
+
+            messageBox.setText(message);
+        }
     }
 
     @Override
@@ -39,6 +49,16 @@ public class MyActivity extends Activity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        EditText messageView = (EditText) findViewById(R.id.edit_message);
+        String message = messageView.getText().toString();
+
+        savedInstanceState.putString("message", message);
+
+        super.onSaveInstanceState(savedInstanceState);
     }
 
     public void openSearch() {

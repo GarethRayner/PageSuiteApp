@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mon Premier App</string>
+
+    <string name="action_settings">Paramètres</string>
+    <string name="edit_message">Entrer un message</string>
+    <string name="button_send">Envoyer</string>
+    <string name="title_activity_display_message">Mon message</string>
+    <string name="action_search">Recherche</string>
+    <string name="search_button_text">Recherche!</string>
+
+    <string name="hello_world">Bonjour monde!</string>
+    <string name="title_activity_search">Recherche</string>
+    <string name="nothing_found">Nothing Found!</string>
+
+    <string name="first_sug">Article on Ducks</string>
+    <string name="second_sug">Article on Geese</string>
+</resources>

@@ -10,4 +10,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_search">Search</string>
+	<string name="nothing_found">Nothing Found!</string>
+	
+	<string name="first_sug">Article on Ducks</string>
+	<string name="second_sug">Article on Geese</string>
 </resources>
