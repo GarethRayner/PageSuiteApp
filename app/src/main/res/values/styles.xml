@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme"
+        parent="@android:style/Theme.Holo.Light">
+    </style>
+
+    <style name="BasicTheme"
+        parent="AppTheme">
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+</resources>
